@@ -1,4 +1,3 @@
-/* -------------------- GENERAL RESET -------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&display=swap');
 
 * {
@@ -9,8 +8,11 @@
 }
 
 body {
-  background: linear-gradient(135deg, #0f0f0f); /* subtle dark gradient */
-  color: #fff;
+  background: linear-gradient(290deg, #0f0f0f, #505050);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #929292;
   line-height: 1.7;
 }
 
