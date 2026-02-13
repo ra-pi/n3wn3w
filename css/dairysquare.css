@@ -7,6 +7,14 @@
   font-family: 'Poppins', sans-serif; /* consistent font */
 }
 
+html, body {
+  height: 100%;
+  background: linear-gradient(290deg, #0f0f0f, #505050) !important;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 body {
   background: linear-gradient(290deg, #0f0f0f, #505050);
   background-attachment: fixed;
@@ -180,3 +188,4 @@ main {
     font-size: 14px;
   }
 }
+
