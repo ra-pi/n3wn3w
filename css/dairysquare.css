@@ -13,9 +13,7 @@ body {
   color: #e5e7eb;
   line-height: 1.8;
   min-height: 100vh;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
+  /* Removed background-attachment, background-repeat, and background-size as they are for images, not gradients, and can cause issues with gradient rendering in some browsers */
 }
 
 main {
@@ -64,7 +62,7 @@ main {
 }
 
 .info-container .info-image {
-  flex: 1 1 5%;       /* image takes 45% of container on desktop */
+  flex: 1 1 45%;       /* image takes 45% of container on desktop */
 }
 
 .info-container .info-image img {
@@ -182,9 +180,3 @@ main {
     font-size: 14px;
   }
 }
-
-
-
-
-
-
