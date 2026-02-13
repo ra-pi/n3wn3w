@@ -9,12 +9,13 @@
 
 .body {
   background: linear-gradient(190deg, #0f0f0f, #505050) !important;
+  font-family: 'Playfair Display', serif;
+  color: #e5e7eb;
+  line-height: 1.8;
+  min-height: 100vh;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  color: #929292;
-  line-height: 1.7;
-  height: 100%;
 }
 
 main {
@@ -181,6 +182,7 @@ main {
     font-size: 14px;
   }
 }
+
 
 
 
