@@ -8,20 +8,13 @@
 }
 
 html, body {
-  height: 100%;
   background: linear-gradient(290deg, #0f0f0f, #505050) !important;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-body {
-  background: linear-gradient(290deg, #0f0f0f, #505050);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   color: #929292;
   line-height: 1.7;
+  height: 100%;
 }
 
 main {
@@ -188,4 +181,5 @@ main {
     font-size: 14px;
   }
 }
+
 
