@@ -1,0 +1,154 @@
+/* =========================================
+   PAGE BACKGROUND
+========================================= */
+body {
+  background: linear-gradient(260deg, #004b9693, #29003b69);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  min-height: 100%;
+  background-attachment: fixed;
+}
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+.staff-main {
+  padding-bottom: 80px;
+}
+
+/* =========================================
+   HERO SECTION
+========================================= */
+.staff-hero {
+  text-align: center;
+  padding: clamp(80px, 10vw, 120px) 20px 60px;
+}
+
+.info-title {
+  font-size: clamp(32px, 6vw, 72px);
+  font-weight: 800;
+  margin: 0;
+  color: #1c2b3a;
+  letter-spacing: 2px;
+}
+
+.hero-sub {
+  margin-top: 20px;
+  font-size: clamp(15px, 2vw, 20px);
+  color: #555;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* =========================================
+   INFO SECTION
+========================================= */
+.info-container {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: clamp(20px, 5vw, 60px);
+  display: flex;
+  align-items: center;
+  gap: 60px;
+
+  /* Modern Glass Effect */
+  background: rgba(255, 255, 255, 0.192);
+  backdrop-filter: blur(12px);
+  border-radius: 30px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.233);
+}
+
+/* Image */
+.info-image {
+  flex: 1;
+}
+
+.info-image img {
+  width: 100%;
+  border-radius: 25px;
+  object-fit: cover;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+  transition: transform 0.4s ease;
+}
+
+.info-image img:hover {
+  transform: scale(1.03);
+}
+
+/* Text */
+.info-text {
+  flex: 1;
+}
+
+.info-heading {
+  font-size: clamp(22px, 3vw, 36px);
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1c2b3a;
+}
+
+.info-description {
+  font-size: clamp(14px, 1.8vw, 18px);
+  line-height: 1.8;
+  color: #444;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .info-container {
+    gap: 40px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .staff-hero {
+    padding: 100px 20px 40px;
+  }
+
+  .info-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .info-text {
+    text-align: center;
+  }
+
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+
+  .info-container {
+    padding: 25px;
+    border-radius: 20px;
+  }
+
+  .info-heading {
+    font-size: 22px;
+  }
+
+  .info-description {
+    font-size: 15px;
+  }
+}

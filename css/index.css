@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ROOT SCALE */
+html {
+  font-size: 16px;
+}
+
+/* BODY */
+body {
+  font-family: 'Playfair Display', serif;
+  color: #e5e7eb;
+  line-height: 1.8;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #140b22 0%, #200000 100%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* MAIN CONTAINER */
+main {
+  max-width: 1200px;
+  margin: auto;
+  padding: 100px 24px 80px;
+}
+
+/* HOME SECTION */
+#home {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  animation: fadeUp 1.2s ease forwards;
+}
+
+.home-title {
+  font-family: 'Poppins', sans-serif; 
+  font-size: 10px; 
+  font-weight: 700; 
+  text-align: center;
+  color: #cbd5f5;
+  margin: 2rem 0;
+  line-height: 1.2;
+  text-transform: uppercase; 
+}
+
+/* TITLE */
+#home h1 {
+  font-size: clamp(2.2rem, 4vw, 4rem);
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #cbd5f5;
+}
+
+/* INTRO TEXT */
+.intro {
+  max-width: 950px;
+  margin: auto;
+  padding: 40px 45px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 22px;
+  backdrop-filter: blur(14px);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4);
+  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
+  color: #cbd5f5;
+  text-align: justify;
+}
+
+/* IMAGE SECTION */
+.home-image {
+  display: flex;
+  justify-content: center;
+}
+
+/* IMAGE PLACEHOLDER */
+.image-placeholder {
+  width: 100%;
+  max-width: 700px;
+  height: clamp(270px, 45vw, 590px);
+  border-radius: 24px;
+  background: url("../images/octopus222.png") center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  color: #94a3b8;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 35px 90px rgba(0, 0, 0, 0.5);
+}
+
+/* SHINE EFFECT */
+.image-placeholder::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    160deg,
+    transparent,
+    rgba(255, 255, 255, 0.08),
+    transparent
+  );
+  animation: shine 3s infinite;
+}
+
+/* ANIMATIONS */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shine {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+/* MOBILE (PHONES) */
+@media (max-width: 480px) {
+  main {
+    padding: 70px 14px 50px;
+  }
+
+  #home {
+    gap: 40px;
+  }
+  .home-title {
+    font-size: 1.5rem;
+    margin: 0.75rem 0;
+    padding: 0 0.5rem;
+  }
+
+  .intro {
+    padding: 22px;
+    font-size: 0.95rem;
+    text-align: center;
+  }
+
+  .image-placeholder {
+    border-radius: 18px;
+    letter-spacing: 1px;
+    height: clamp(300px, 55vw, 590px);
+  }
+}
+
+
+/*LARGE PHONES / SMALL TABLETS */
+@media (max-width: 768px) {
+  main {
+    padding: 80px 18px 60px;
+  }
+
+  .intro {
+    padding: 30px;
+    font-size: 17px;
+  }
+
+   .home-title {
+    font-size: 1rem;
+    margin: 1rem 0;
+    padding: 0 1rem;
+  }
+
+  .image-placeholder {
+    border-radius: 18px;
+    height: clamp(300px, 78vw, 590px);
+  }
+}
+
+@media (max-width: 868px) {
+  main {
+    padding: 80px 18px 60px;
+  }
+
+  .intro {
+    padding: 30px;
+    font-size: 17px;
+  }
+
+   .home-title {
+    font-size: 1rem;
+    margin: 1rem 0;
+    padding: 0 1rem;
+  }
+
+  .image-placeholder {
+    border-radius: 18px;
+    height: clamp(300px, 78vw, 590px);
+  }
+}
+
+@media (min-width: 884px) {
+  main {
+    padding: 120px 30px 90px;
+  }
+  .intro {
+    padding: 30px;
+    font-size: 19px;
+  }
+
+  .home-title {
+    font-size: 2rem;
+    margin: 1rem 0;
+    padding: 0 1rem;
+  }
+
+  .image-placeholder {
+    border-radius: 18px;
+    height: clamp(300px, 89vw, 590px);
+  }
+}
+
+/*LAPTOPS */
+@media (min-width: 1024px) {
+  main {
+    padding: 120px 30px 90px;
+  }
+  .intro {
+    padding: 30px;
+    font-size: 19px;
+  }
+  .image-placeholder {
+    border-radius: 18px;
+    height: clamp(300px, 47vw, 590px);
+  }
+  .home-title {
+    font-size: 2.5rem;
+    margin: 1.5rem 0;
+  }
+}
+
+/*LARGE DESKTOPS */
+@media (min-width: 1440px) {
+  main {
+    max-width: 1400px;
+  }
+
+  .intro {
+    font-size: 1.1rem;
+  }
+}
