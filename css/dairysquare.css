@@ -8,7 +8,7 @@
 }
 
 body {
-  background: linear-gradient(290deg, #0f0f0f, #505050);
+  background: linear-gradient(190deg, #0f0f0f, #505050);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -179,4 +179,5 @@ main {
     font-size: 14px;
   }
 }
+
 
